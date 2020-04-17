@@ -1,4 +1,5 @@
 <?php
+define("BASEPATH", dirname(__FILE__));
 require "function.php";
 header('Content-Type: application/json');
 header('Access-Control-Allow-Methods: GET');

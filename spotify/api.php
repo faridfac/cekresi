@@ -21,7 +21,7 @@ if ($_GET) {
     if ($js['status'] == "1") {
       $result = array('result' => true, 'data' => array('email' => ''.$email.'', 'pass' => ''.$pass.''), 'message' => 'Successfully Register');
     } else {
-      $err = $spotify->get_between($create, 'errors":{"', '"},"country');
+      $err = $spotify->get_between($create, 'errors":{"email":"', '"},"country');
       $result = array('result' => false, 'data' => null, 'message' => ''.$err.'');
     }
   } else {

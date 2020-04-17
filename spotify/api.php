@@ -15,7 +15,7 @@ if ($_GET) {
     $nama = $spotify->nama();
     $pecah = explode(" ",$nama);
     $email = strtolower($pecah[0].$pecah[1].rand(10,9999))."@gmail.com";
-    $pass = $pecah[0].rand(10,9999));
+    $pass = $pecah[0]."23";
     $create = $spotify->createAccount($email, $nama, $pass);
     $js = json_decode($create, true);
     if ($js['status'] == "1") {

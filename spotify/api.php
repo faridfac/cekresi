@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+define("BASEPATH", dirname(__FILE__));
 
 require "function.php";
 header('Content-Type: application/json');

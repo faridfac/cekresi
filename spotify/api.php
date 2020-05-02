@@ -48,5 +48,6 @@ if ($_GET) {
 } else {
     $result = array('result' => false, 'data' => null, 'message' => 'Permintaan tidak sesuai');
 }
-print json_encode($result, JSON_PRETTY_PRINT);
+// print json_encode($result, JSON_PRETTY_PRINT);
+print json_encode($result);
 ?>

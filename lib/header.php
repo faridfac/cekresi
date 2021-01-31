@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 if ($config['web']['maintenance'] == 1) {
-	exit("WEBSITE SEDANG DALAM PEMELIHARAAN (MAINTENANCE)");
+	exit("Under Maintenance");
 }
 ?>
 <!DOCTYPE html>

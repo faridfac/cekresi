@@ -10,7 +10,7 @@
 <body style="background: #f9f9f9">
 	<nav class="navbar navbar-light bg-white shadow-sm">
 		<div class="container">
-			<a class="navbar-brand" href="https://cicacode.com/twibbon">
+			<a class="navbar-brand" href="http://faridfac.herokuapp.com/twibbon/">
 				<img src="wfi.jpg" width="30" height="30">
 				<span class="navbar-brand mb-0 h1">Trial Twibbon</span>
 			</a>

@@ -21,7 +21,7 @@
 			<div class="col-lg-6 offset-lg-3 col-md-12 mb-4">
 				<div class="card card-body shadow-sm mb-4">
 					<div class="alert alert-info" role="alert">
-						<small>Tips: gunakan ukuran foto 1:1 untuk hasil terbaik</small>
+						<small>Tips: <br>- Gunakan ukuran foto 1:1 untuk hasil terbaik<br>- Max file 5MB</small>
 					</div>
 					<form method="post" enctype="multipart/form-data">
 						<div class="form-group">
@@ -58,7 +58,7 @@
 										if (file_exists("images/" . $namabaru))
 										{
 											echo '<script>';
-											echo 'swal("Error!", "Terjadi kesalahan, silahkan coba lagi", "error");';
+											echo 'alert("Terjadi kesalahan, silahkan coba lagi");';
 											echo '</script>';
 										}
 										else
@@ -75,7 +75,7 @@
 									else
 									{
 										echo '<script>';
-										echo 'swal("Error!", "File yang diupload harus gambar", "error");';
+										echo 'alert("File yang diupload harus gambar");';
 										echo '</script>';
 										unlink($_FILES["file"]["tmp_name"]);
 									}
@@ -83,14 +83,14 @@
 								else
 								{
 									echo '<script>';
-									echo 'swal("Error!", "Ukuran file tidak boleh lebih dari 5MB", "error");';
+									echo 'alert("Ukuran file tidak boleh lebih dari 5MB");';
 									echo '</script>';
 								}
 							}
 							else
 							{
 								echo '<script>';
-								echo 'swal("Error!", "Gambar tidak boleh kosong", "error");';
+								echo 'alert("Gambar tidak boleh kosong");';
 								echo '</script>';
 							}
 						}

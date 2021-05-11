@@ -50,7 +50,7 @@
 
 							if (!empty($filegambar))
 							{
-								if ($ukuranfile <= 500000)
+								if ($ukuranfile <= 5000000)
 								{
 									if (in_array($ekstensifile, $jenisfile) && ($ukuranfile <= 500000))
 									{

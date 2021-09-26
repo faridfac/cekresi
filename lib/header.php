@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 if ($config['web']['maintenance'] == 1) {
-	exit("Under Maintenance");
+	exit("{status: false, msg: "Under Maintenance."}");
 }
 ?>
 <!DOCTYPE html>

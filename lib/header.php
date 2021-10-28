@@ -1,5 +1,6 @@
 <?php
 require 'config.php';
+$msg = '{"status": false, "data": { "msg": "Under maintenance."}}';
 $msg = json_encode(array('status' => false, 'data' => array('msg' => 'Under maintenance'), JSON_PRETTY_PRINT);
 if ($config['web']['maintenance'] == 1) {
 	exit($msg);
